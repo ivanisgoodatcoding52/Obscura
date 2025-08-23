@@ -88,22 +88,10 @@ export default function HomePage() {
             <div className="version-card p-6 rounded-lg">
               <div className="flex justify-between items-start mb-3">
                 <h3 className="text-lg font-medium text-white">Community Milestone</h3>
-                <span className="text-white/60 text-sm">12/15/2024</span>
+                <span className="text-white/60 text-sm"></span>
               </div>
               <ul className="text-white/80 text-sm space-y-1">
-                <li>• 10,000+ privacy advocates joined our movement</li>
-                <li>• Launched new educational privacy workshops</li>
-                <li>• Published comprehensive digital rights guide</li>
-              </ul>
-            </div>
-            <div className="version-card p-6 rounded-lg">
-              <div className="flex justify-between items-start mb-3">
-                <h3 className="text-lg font-medium text-white">Campaign Success</h3>
-                <span className="text-white/60 text-sm">11/28/2024</span>
-              </div>
-              <ul className="text-white/80 text-sm space-y-1">
-                <li>• Successfully lobbied for stronger data protection laws</li>
-                <li>• Organized nationwide privacy awareness events</li>
+                <li></li>
               </ul>
             </div>
           </div>
