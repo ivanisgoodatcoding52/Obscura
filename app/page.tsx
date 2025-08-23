@@ -43,6 +43,7 @@ export default function HomePage() {
           </Button>
 
           <Link href="#versions" className="text-white/60 hover:text-white text-sm transition-colors">
+            <br></br>
             View Recent Updates
           </Link>
         </div>
