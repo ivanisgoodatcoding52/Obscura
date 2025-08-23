@@ -42,15 +42,6 @@ export default function HomePage() {
             <Link href="/join">Join Our Movement</Link>
           </Button>
 
-          <div className="flex items-center justify-center space-x-6 mb-4">
-            <div className="w-8 h-8 bg-white rounded flex items-center justify-center">
-              <span className="text-black font-bold text-sm">PP</span>
-            </div>
-            <div className="w-8 h-8 bg-white rounded flex items-center justify-center">
-              <span className="text-black font-bold text-sm">GH</span>
-            </div>
-          </div>
-
           <Link href="#versions" className="text-white/60 hover:text-white text-sm transition-colors">
             View Recent Updates
           </Link>
