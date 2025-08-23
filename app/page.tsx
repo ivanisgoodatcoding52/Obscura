@@ -56,6 +56,25 @@ export default function HomePage() {
           </Link>
         </div>
       </section>
+            <section id="community" className="py-20 px-4">
+        <div className="container mx-auto max-w-2xl text-center">
+          <div className="flex items-center justify-center space-x-8 mb-8">
+            <a href="#" className="text-white/60 hover:text-white transition-colors text-sm">
+              Discord
+            </a>
+            <a href="#" className="text-white/60 hover:text-white transition-colors text-sm">
+              Twitter
+            </a>
+            <a href="#" className="text-white/60 hover:text-white transition-colors text-sm">
+              GitHub
+            </a>
+            <a href="#" className="text-white/60 hover:text-white transition-colors text-sm">
+              YouTube
+            </a>
+          </div>
+          <p className="text-white/50 text-sm">Join our community fighting for digital privacy rights.</p>
+        </div>
+      </section>
 
       <section id="tools" className="py-20 px-4">
         <div className="container mx-auto max-w-4xl">
@@ -63,7 +82,7 @@ export default function HomePage() {
             <div className="glass-card p-6 rounded-lg text-center">
               <h3 className="text-xl font-medium text-white mb-3">Secure</h3>
               <p className="text-white/70 text-sm">
-                Military-grade encryption protects your data from surveillance and tracking.
+                Encryption protects your data from surveillance and tracking.
               </p>
             </div>
             <div className="glass-card p-6 rounded-lg text-center">
@@ -108,26 +127,6 @@ export default function HomePage() {
               </ul>
             </div>
           </div>
-        </div>
-      </section>
-
-      <section id="community" className="py-20 px-4">
-        <div className="container mx-auto max-w-2xl text-center">
-          <div className="flex items-center justify-center space-x-8 mb-8">
-            <a href="#" className="text-white/60 hover:text-white transition-colors text-sm">
-              Discord
-            </a>
-            <a href="#" className="text-white/60 hover:text-white transition-colors text-sm">
-              Twitter
-            </a>
-            <a href="#" className="text-white/60 hover:text-white transition-colors text-sm">
-              GitHub
-            </a>
-            <a href="#" className="text-white/60 hover:text-white transition-colors text-sm">
-              YouTube
-            </a>
-          </div>
-          <p className="text-white/50 text-sm">Join our community fighting for digital privacy rights.</p>
         </div>
       </section>
 
