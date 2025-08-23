@@ -37,8 +37,9 @@ export default function HomePage() {
           <Button
             size="lg"
             className="bg-[#007AFF] hover:bg-[#0056CC] text-white rounded-full px-12 py-4 text-lg font-medium shadow-lg hover:shadow-xl transition-all mb-8"
+            asChild
           >
-            Join Our Movement
+            <Link href="/join">Join Our Movement</Link>
           </Button>
 
           <div className="flex items-center justify-center space-x-6 mb-4">
