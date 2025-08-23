@@ -1,168 +1,161 @@
 import { Button } from "@/components/ui/button"
-import { Shield, Eye, Lock, Users, Target, Zap } from "lucide-react"
 import Link from "next/link"
 
-export default function AboutPage() {
+export default function HomePage() {
   return (
     <div className="min-h-screen text-foreground">
-      <header className="glass sticky top-0 z-50 border-b border-border/30">
-        <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-          <Link href="/">
-            <Shield className="h-10 w-10 text-primary drop-shadow-lg" />
+      <header className="sticky top-0 z-50 backdrop-blur-sm bg-black/20">
+        <div className="container mx-auto px-6 py-4 flex items-center justify-between">
+          <Link href="/" className="text-2xl font-light text-white">
+            obscura
           </Link>
-          <nav className="hidden md:flex items-center space-x-8">
-            <Link
-              href="/"
-              className="text-foreground/90 hover:text-foreground transition-colors font-medium drop-shadow-sm"
-            >
-              Home
-            </Link>
-            <Link href="/about" className="text-foreground font-medium drop-shadow-sm">
+          <nav className="flex items-center space-x-8">
+            <Link href="/about" className="text-white/80 hover:text-white transition-colors text-sm">
               About
             </Link>
-            <a
-              href="/#community"
-              className="text-foreground/90 hover:text-foreground transition-colors font-medium drop-shadow-sm"
-            >
+            <Link href="#tools" className="text-white/80 hover:text-white transition-colors text-sm">
+              Tools
+            </Link>
+            <Link href="#community" className="text-white/80 hover:text-white transition-colors text-sm">
               Community
-            </a>
-            <a
-              href="#contact"
-              className="text-foreground/90 hover:text-foreground transition-colors font-medium drop-shadow-sm"
+            </Link>
+            <Button
+              variant="outline"
+              className="border-white/30 text-white hover:bg-white/10 rounded-full px-4 py-2 text-sm bg-transparent"
             >
-              Contact
-            </a>
-            <Button className="bg-primary/90 backdrop-blur-sm text-primary-foreground hover:bg-primary rounded-full px-6 font-medium shadow-lg">
               Donate
             </Button>
           </nav>
         </div>
       </header>
 
-      <section className="py-20 px-4">
+      <section className="flex items-center justify-center min-h-[70vh] px-4 pt-20">
+        <div className="text-center max-w-4xl">
+          <h1 className="hero-title text-8xl md:text-9xl mb-8 leading-tight text-white">obscura</h1>
+          <p className="text-xl md:text-2xl text-white/90 mb-2 font-light">A community fighting for digital privacy.</p>
+          <p className="text-lg text-white/70 mb-12 font-light">Privacy Advocacy • Digital Rights • Community Action</p>
+          <Button
+            size="lg"
+            className="bg-[#007AFF] hover:bg-[#0056CC] text-white rounded-full px-12 py-4 text-lg font-medium shadow-lg hover:shadow-xl transition-all mb-8"
+          >
+            Join Our Movement
+          </Button>
+
+          <div className="flex items-center justify-center space-x-6 mb-4">
+            <div className="w-8 h-8 bg-white rounded flex items-center justify-center">
+              <span className="text-black font-bold text-sm">PP</span>
+            </div>
+            <div className="w-8 h-8 bg-white rounded flex items-center justify-center">
+              <span className="text-black font-bold text-sm">GH</span>
+            </div>
+          </div>
+
+          <Link href="#versions" className="text-white/60 hover:text-white text-sm transition-colors">
+            View Recent Updates
+          </Link>
+        </div>
+      </section>
+
+      <section id="tools" className="py-20 px-4">
         <div className="container mx-auto max-w-4xl">
-          <div className="glass-card rounded-3xl p-12 text-center mb-16">
-            <h1 className="text-5xl md:text-7xl font-thin mb-8">
-              WHO WE <span className="text-primary font-light">ARE</span>
-            </h1>
-            <p className="text-xl text-foreground/80 max-w-3xl mx-auto font-light drop-shadow-sm">
-              Obscura is a non-profit organization dedicated to protecting digital privacy rights and educating people
-              about the threats to their online freedom.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-12 mb-20">
-            <div className="glass-card rounded-3xl p-8 hover:scale-105 transition-all duration-300">
-              <div className="h-16 w-16 bg-primary/20 backdrop-blur-sm rounded-3xl flex items-center justify-center mb-6 shadow-lg">
-                <Target className="h-8 w-8 text-primary drop-shadow-sm" />
-              </div>
-              <h3 className="text-2xl text-foreground font-light mb-4 drop-shadow-sm">Our Mission</h3>
-              <p className="text-foreground/80 leading-relaxed font-light">
-                To empower individuals with the knowledge and tools needed to protect their digital privacy in an
-                increasingly surveilled world. We believe privacy is a fundamental human right, not a privilege.
+          <div className="grid md:grid-cols-3 gap-8 mb-16">
+            <div className="glass-card p-6 rounded-lg text-center">
+              <h3 className="text-xl font-medium text-white mb-3">Secure</h3>
+              <p className="text-white/70 text-sm">
+                Military-grade encryption protects your data from surveillance and tracking.
               </p>
             </div>
-
-            <div className="glass-card rounded-3xl p-8 hover:scale-105 transition-all duration-300">
-              <div className="h-16 w-16 bg-secondary/20 backdrop-blur-sm rounded-3xl flex items-center justify-center mb-6 shadow-lg">
-                <Eye className="h-8 w-8 text-secondary drop-shadow-sm" />
-              </div>
-              <h3 className="text-2xl text-foreground font-light mb-4 drop-shadow-sm">The Problem</h3>
-              <p className="text-foreground/80 leading-relaxed font-light">
-                Every day, corporations and governments collect massive amounts of personal data without consent. Your
-                browsing habits, location, communications, and personal information are being harvested and sold.
+            <div className="glass-card p-6 rounded-lg text-center">
+              <h3 className="text-xl font-medium text-white mb-3">Private</h3>
+              <p className="text-white/70 text-sm">
+                Zero-log policy ensures your online activities remain completely anonymous.
               </p>
             </div>
-          </div>
-
-          <div className="mb-20">
-            <div className="glass-card rounded-3xl p-12 mb-12">
-              <h2 className="text-4xl font-thin text-center text-foreground drop-shadow-lg">
-                WHAT WE <span className="text-primary font-light">DO</span>
-              </h2>
-            </div>
-            <div className="grid md:grid-cols-3 gap-8">
-              <div className="glass-card rounded-3xl p-8 hover:scale-105 transition-all duration-300 group">
-                <div className="text-center">
-                  <div className="h-16 w-16 bg-primary/20 backdrop-blur-sm rounded-3xl flex items-center justify-center mb-6 mx-auto group-hover:scale-110 transition-transform shadow-lg">
-                    <Users className="h-8 w-8 text-primary drop-shadow-sm" />
-                  </div>
-                  <h3 className="text-xl text-foreground font-light mb-4 drop-shadow-sm">Education</h3>
-                  <p className="text-foreground/80 font-light">
-                    We create resources, guides, and workshops to teach people about digital privacy threats and
-                    protection methods.
-                  </p>
-                </div>
-              </div>
-
-              <div className="glass-card rounded-3xl p-8 hover:scale-105 transition-all duration-300 group">
-                <div className="text-center">
-                  <div className="h-16 w-16 bg-secondary/20 backdrop-blur-sm rounded-3xl flex items-center justify-center mb-6 mx-auto group-hover:scale-110 transition-transform shadow-lg">
-                    <Lock className="h-8 w-8 text-secondary drop-shadow-sm" />
-                  </div>
-                  <h3 className="text-xl text-foreground font-light mb-4 drop-shadow-sm">Tools</h3>
-                  <p className="text-foreground/80 font-light">
-                    We develop and recommend privacy-focused tools, apps, and services that help protect your digital
-                    footprint.
-                  </p>
-                </div>
-              </div>
-
-              <div className="glass-card rounded-3xl p-8 hover:scale-105 transition-all duration-300 group">
-                <div className="text-center">
-                  <div className="h-16 w-16 bg-accent/20 backdrop-blur-sm rounded-3xl flex items-center justify-center mb-6 mx-auto group-hover:scale-110 transition-transform shadow-lg">
-                    <Zap className="h-8 w-8 text-accent drop-shadow-sm" />
-                  </div>
-                  <h3 className="text-xl text-foreground font-light mb-4 drop-shadow-sm">Advocacy</h3>
-                  <p className="text-foreground/80 font-light">
-                    We advocate for stronger privacy laws and regulations to protect individuals from corporate and
-                    government surveillance.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="glass-card rounded-3xl p-12 text-center">
-            <h2 className="text-3xl font-thin mb-6 text-foreground drop-shadow-lg">
-              JOIN THE <span className="text-primary font-light">FIGHT</span>
-            </h2>
-            <p className="text-foreground/80 mb-8 max-w-2xl mx-auto font-light drop-shadow-sm">
-              Your privacy matters. Together, we can build a future where digital rights are respected and protected.
-              Join our community and take action today.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/">
-                <Button
-                  size="lg"
-                  className="bg-primary/90 backdrop-blur-sm hover:bg-primary text-primary-foreground rounded-full px-8 font-medium shadow-xl hover:shadow-2xl transition-all hover:scale-105"
-                >
-                  Get Started
-                </Button>
-              </Link>
-              <Button
-                size="lg"
-                variant="outline"
-                className="border-border/50 text-foreground hover:bg-muted/50 backdrop-blur-sm rounded-full px-8 bg-transparent font-medium shadow-lg"
-              >
-                Learn More
-              </Button>
+            <div className="glass-card p-6 rounded-lg text-center">
+              <h3 className="text-xl font-medium text-white mb-3">Free</h3>
+              <p className="text-white/70 text-sm">
+                Open-source tools available to everyone fighting for digital rights.
+              </p>
             </div>
           </div>
         </div>
       </section>
 
-      <footer className="glass border-t border-border/30 py-8 px-4 mt-20">
-        <div className="container mx-auto text-center">
-          <div className="flex items-center justify-center space-x-2 mb-4">
-            <Shield className="h-6 w-6 text-primary drop-shadow-lg" />
-            <span className="text-lg font-light text-foreground drop-shadow-sm">Obscura</span>
+      <section id="versions" className="py-20 px-4">
+        <div className="container mx-auto max-w-4xl">
+          <h2 className="text-2xl font-light text-white mb-8 text-center">Recent Updates:</h2>
+          <div className="space-y-4">
+            <div className="version-card p-6 rounded-lg">
+              <div className="flex justify-between items-start mb-3">
+                <h3 className="text-lg font-medium text-white">Community Milestone</h3>
+                <span className="text-white/60 text-sm">12/15/2024</span>
+              </div>
+              <ul className="text-white/80 text-sm space-y-1">
+                <li>• 10,000+ privacy advocates joined our movement</li>
+                <li>• Launched new educational privacy workshops</li>
+                <li>• Published comprehensive digital rights guide</li>
+              </ul>
+            </div>
+            <div className="version-card p-6 rounded-lg">
+              <div className="flex justify-between items-start mb-3">
+                <h3 className="text-lg font-medium text-white">Campaign Success</h3>
+                <span className="text-white/60 text-sm">11/28/2024</span>
+              </div>
+              <ul className="text-white/80 text-sm space-y-1">
+                <li>• Successfully lobbied for stronger data protection laws</li>
+                <li>• Organized nationwide privacy awareness events</li>
+              </ul>
+            </div>
           </div>
-          <p className="text-foreground/70 text-sm drop-shadow-sm">
-            © 2024 Obscura. Fighting for digital privacy rights.
-          </p>
         </div>
-      </footer>
+      </section>
+
+      <section id="community" className="py-20 px-4">
+        <div className="container mx-auto max-w-2xl text-center">
+          <div className="flex items-center justify-center space-x-8 mb-8">
+            <a href="#" className="text-white/60 hover:text-white transition-colors text-sm">
+              Discord
+            </a>
+            <a href="#" className="text-white/60 hover:text-white transition-colors text-sm">
+              Twitter
+            </a>
+            <a href="#" className="text-white/60 hover:text-white transition-colors text-sm">
+              GitHub
+            </a>
+            <a href="#" className="text-white/60 hover:text-white transition-colors text-sm">
+              YouTube
+            </a>
+          </div>
+          <p className="text-white/50 text-sm">Join our community fighting for digital privacy rights.</p>
+        </div>
+      </section>
+
+      <section className="py-20 px-4 border-t border-white/10">
+        <div className="container mx-auto max-w-4xl text-center">
+          <h2 className="text-3xl font-light text-white mb-8">About Obscura</h2>
+          <p className="text-white/80 text-lg leading-relaxed mb-8">
+            Obscura is a non-profit community dedicated to protecting digital privacy rights and educating people about
+            online surveillance. We believe privacy is a fundamental human right that must be defended through
+            collective action and education.
+          </p>
+          <div className="grid md:grid-cols-2 gap-8 text-left">
+            <div>
+              <h3 className="text-xl font-medium text-white mb-4">Education & Advocacy</h3>
+              <p className="text-white/70 text-sm">
+                We provide resources, workshops, and advocacy tools to help individuals and communities protect their
+                digital rights.
+              </p>
+            </div>
+            <div>
+              <h3 className="text-xl font-medium text-white mb-4">Community Driven</h3>
+              <p className="text-white/70 text-sm">
+                Our initiatives are powered by volunteers and supporters who believe in the importance of digital
+                privacy for everyone.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   )
 }
