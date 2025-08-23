@@ -52,7 +52,6 @@ export default function JoinPage() {
                   Fill Application
                 </a>
               </Button>
-              <p className="text-white/50 text-xs mt-3">Google Form (you'll create this)</p>
             </div>
 
             {/* Step 2: Discord */}
