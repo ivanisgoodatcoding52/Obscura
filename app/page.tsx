@@ -34,7 +34,8 @@ export default function HomePage() {
         <div className="text-center max-w-4xl">
           <h1 className="hero-title text-8xl md:text-9xl mb-8 leading-tight text-white">obscura</h1>
           <p className="text-xl md:text-2xl text-white/90 mb-2 font-light">
-            We exist to protect digital privacy by educating communities and advocating for stronger data rights.
+            Obscura is a global nonprofit dedicated to protecting digital privacy by raising awareness, teaching free
+            workshops, and advocating for stronger digital rights policies.
           </p>
           <p className="text-lg text-white/70 mb-12 font-light">Privacy Advocacy • Digital Rights • Community Action</p>
           <Button
@@ -67,7 +68,7 @@ export default function HomePage() {
               className="w-8 h-8 bg-[#333] rounded flex items-center justify-center hover:scale-110 transition-transform"
             >
               <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 2.157 2.42 0 1.333-.956 2.419-2.157 2.419zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
               </svg>
             </a>
             <a
@@ -81,12 +82,52 @@ export default function HomePage() {
           </div>
 
           <Link href="#updates" className="text-white/60 hover:text-white text-sm transition-colors">
-            View Recent Updates
+            View Our Roadmap
           </Link>
         </div>
       </section>
 
       <section className="py-20 px-4 bg-black/20">
+        <div className="container mx-auto max-w-4xl text-center">
+          <h2 className="text-3xl font-light text-white mb-12">Our Core Values</h2>
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="glass-card p-8 rounded-lg">
+              <div className="w-12 h-12 bg-[#007AFF] rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-white text-xl">🔒</span>
+              </div>
+              <h3 className="text-xl font-medium text-white mb-4">Secure</h3>
+              <p className="text-white/70 text-sm mb-6">
+                We promote tools like Signal and ProtonMail to ensure secure communication and protect your data from
+                surveillance.
+              </p>
+            </div>
+
+            <div className="glass-card p-8 rounded-lg">
+              <div className="w-12 h-12 bg-[#5865F2] rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-white text-xl">🛡️</span>
+              </div>
+              <h3 className="text-xl font-medium text-white mb-4">Private</h3>
+              <p className="text-white/70 text-sm mb-6">
+                We teach people how to safeguard their personal data online through education, workshops, and practical
+                guides.
+              </p>
+            </div>
+
+            <div className="glass-card p-8 rounded-lg">
+              <div className="w-12 h-12 bg-[#28A745] rounded-full flex items-center justify-center mx-auto mb-4">
+                <span className="text-white text-xl">🆓</span>
+              </div>
+              <h3 className="text-xl font-medium text-white mb-4">Free</h3>
+              <p className="text-white/70 text-sm mb-6">
+                We believe privacy is a right, not a luxury—our resources are open to everyone, regardless of technical
+                background or income.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="py-20 px-4">
         <div className="container mx-auto max-w-4xl text-center">
           <h2 className="text-3xl font-light text-white mb-12">Get Involved</h2>
           <div className="grid md:grid-cols-3 gap-8">
@@ -96,15 +137,19 @@ export default function HomePage() {
               </div>
               <h3 className="text-xl font-medium text-white mb-4">Stay Updated</h3>
               <p className="text-white/70 text-sm mb-6">
-                Get our monthly newsletter with privacy tips and advocacy updates.
+                Get our monthly newsletter with privacy tips, advocacy updates, and workshop announcements.
               </p>
-              <form className="space-y-3">
+              <form className="space-y-3" action="https://formspree.io/f/your-form-id" method="POST">
                 <input
                   type="email"
+                  name="email"
                   placeholder="Enter your email"
                   className="w-full px-4 py-2 rounded-full bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:border-[#007AFF]"
+                  required
                 />
-                <Button className="w-full bg-[#007AFF] hover:bg-[#0056CC] text-white rounded-full">Subscribe</Button>
+                <Button type="submit" className="w-full bg-[#007AFF] hover:bg-[#0056CC] text-white rounded-full">
+                  Subscribe
+                </Button>
               </form>
             </div>
 
@@ -113,7 +158,10 @@ export default function HomePage() {
                 <span className="text-white text-xl">💬</span>
               </div>
               <h3 className="text-xl font-medium text-white mb-4">Join Community</h3>
-              <p className="text-white/70 text-sm mb-6">Connect with privacy advocates and get real-time support.</p>
+              <p className="text-white/70 text-sm mb-6">
+                Join our Discord to collaborate with privacy advocates worldwide, get real-time support, and participate
+                in discussions.
+              </p>
               <Button className="w-full bg-[#5865F2] hover:bg-[#4752C4] text-white rounded-full" asChild>
                 <Link href="https://discord.gg/obscura">Join Discord</Link>
               </Button>
@@ -125,7 +173,7 @@ export default function HomePage() {
               </div>
               <h3 className="text-xl font-medium text-white mb-4">Volunteer</h3>
               <p className="text-white/70 text-sm mb-6">
-                Help us organize events, create content, and spread awareness.
+                Help us organize events, create educational content, and spread awareness about digital privacy rights.
               </p>
               <Button className="w-full bg-[#28A745] hover:bg-[#218838] text-white rounded-full" asChild>
                 <Link href="/contact?subject=volunteer">Get Involved</Link>
@@ -166,27 +214,39 @@ export default function HomePage() {
 
       <section id="updates" className="py-20 px-4">
         <div className="container mx-auto max-w-4xl">
-          <h2 className="text-2xl font-light text-white mb-8 text-center">Recent Updates:</h2>
+          <h2 className="text-2xl font-light text-white mb-8 text-center">Our Roadmap</h2>
           <div className="space-y-4">
             <div className="version-card p-6 rounded-lg">
               <div className="flex justify-between items-start mb-3">
-                <h3 className="text-lg font-medium text-white">Community Milestone</h3>
-                <span className="text-white/60 text-sm">12/15/2024</span>
+                <h3 className="text-lg font-medium text-white">📌 January 2025</h3>
+                <span className="text-[#007AFF] text-sm font-medium">Upcoming</span>
               </div>
               <ul className="text-white/80 text-sm space-y-1">
-                <li>• 10,000+ privacy advocates joined our movement</li>
-                <li>• Launched new educational privacy workshops</li>
-                <li>• Published comprehensive digital rights guide</li>
+                <li>• Launch of our online community platform</li>
+                <li>• Release comprehensive privacy toolkit</li>
+                <li>• Begin monthly virtual meetups</li>
               </ul>
             </div>
             <div className="version-card p-6 rounded-lg">
               <div className="flex justify-between items-start mb-3">
-                <h3 className="text-lg font-medium text-white">Campaign Success</h3>
-                <span className="text-white/60 text-sm">11/28/2024</span>
+                <h3 className="text-lg font-medium text-white">📌 Spring 2025</h3>
+                <span className="text-[#28A745] text-sm font-medium">Planned</span>
               </div>
               <ul className="text-white/80 text-sm space-y-1">
-                <li>• Successfully lobbied for stronger data protection laws</li>
-                <li>• Organized nationwide privacy awareness events</li>
+                <li>• Hosting our first virtual privacy workshop series</li>
+                <li>• Partnership with local libraries for in-person events</li>
+                <li>• Launch of privacy advocacy training program</li>
+              </ul>
+            </div>
+            <div className="version-card p-6 rounded-lg">
+              <div className="flex justify-between items-start mb-3">
+                <h3 className="text-lg font-medium text-white">📌 Future Goals</h3>
+                <span className="text-[#FFC107] text-sm font-medium">Vision</span>
+              </div>
+              <ul className="text-white/80 text-sm space-y-1">
+                <li>• Collaborating with other digital rights organizations</li>
+                <li>• Establishing regional privacy advocacy chapters</li>
+                <li>• Creating multilingual educational resources</li>
               </ul>
             </div>
           </div>
@@ -243,7 +303,7 @@ export default function HomePage() {
               className="flex items-center space-x-2 text-white/60 hover:text-white transition-colors text-sm"
             >
               <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 2.157 2.42 0 1.333-.956 2.419-2.157 2.419zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
               </svg>
               <span>GitHub</span>
             </a>
@@ -263,27 +323,23 @@ export default function HomePage() {
 
       <section className="py-20 px-4 border-t border-white/10">
         <div className="container mx-auto max-w-4xl text-center">
-          <h2 className="text-3xl font-light text-white mb-8">About Obscura</h2>
-          <p className="text-white/80 text-lg leading-relaxed mb-8">
-            Obscura is a non-profit community dedicated to protecting digital privacy rights and educating people about
-            online surveillance. We believe privacy is a fundamental human right that must be defended through
-            collective action and education.
-          </p>
-          <div className="grid md:grid-cols-2 gap-8 text-left">
-            <div>
-              <h3 className="text-xl font-medium text-white mb-4">Education & Advocacy</h3>
-              <p className="text-white/70 text-sm">
-                We provide resources, workshops, and advocacy tools to help individuals and communities protect their
-                digital rights.
-              </p>
-            </div>
-            <div>
-              <h3 className="text-xl font-medium text-white mb-4">Community Driven</h3>
-              <p className="text-white/70 text-sm">
-                Our initiatives are powered by volunteers and supporters who believe in the importance of digital
-                privacy for everyone.
-              </p>
-            </div>
+          <h2 className="text-3xl font-light text-white mb-8">Our Story</h2>
+          <div className="text-left max-w-3xl mx-auto space-y-6">
+            <p className="text-white/80 text-lg leading-relaxed">
+              Obscura was born from a growing concern about the erosion of digital privacy in our interconnected world.
+              As surveillance capitalism expanded and data breaches became commonplace, we realized that individual
+              action alone wasn't enough—we needed a community.
+            </p>
+            <p className="text-white/80 text-lg leading-relaxed">
+              What inspired us was seeing how many people felt helpless against big tech's data collection practices,
+              government surveillance programs, and the increasing use of AI to analyze personal information. We believe
+              that privacy shouldn't be a luxury for the tech-savvy few, but a fundamental right accessible to everyone.
+            </p>
+            <p className="text-white/80 text-lg leading-relaxed">
+              Our vision of success is a world where privacy is the norm, not the exception. Where people understand
+              their digital rights, have access to privacy-protecting tools, and feel empowered to advocate for stronger
+              data protection policies. Together, we're building that future.
+            </p>
           </div>
         </div>
       </section>
