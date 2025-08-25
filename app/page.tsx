@@ -34,8 +34,7 @@ export default function HomePage() {
         <div className="text-center max-w-4xl">
           <h1 className="hero-title text-8xl md:text-9xl mb-8 leading-tight text-white">obscura</h1>
           <p className="text-xl md:text-2xl text-white/90 mb-2 font-light">
-            Obscura is a global nonprofit dedicated to protecting digital privacy by raising awareness, teaching free
-            workshops, and advocating for stronger digital rights policies.
+            Obscura is a nonprofit dedicated to protecting digital privacy by raising awareness and advocating for stronger digital rights policies.
           </p>
           <p className="text-lg text-white/70 mb-12 font-light">Privacy Advocacy • Digital Rights • Community Action</p>
           <Button
@@ -130,28 +129,8 @@ export default function HomePage() {
       <section className="py-20 px-4">
         <div className="container mx-auto max-w-4xl text-center">
           <h2 className="text-3xl font-light text-white mb-12">Get Involved</h2>
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="glass-card p-8 rounded-lg">
-              <div className="w-12 h-12 bg-[#007AFF] rounded-full flex items-center justify-center mx-auto mb-4">
-                <span className="text-white text-xl">📧</span>
-              </div>
-              <h3 className="text-xl font-medium text-white mb-4">Stay Updated</h3>
-              <p className="text-white/70 text-sm mb-6">
-                Get our monthly newsletter with privacy tips, advocacy updates, and workshop announcements.
-              </p>
-              <form className="space-y-3" action="https://formspree.io/f/your-form-id" method="POST">
-                <input
-                  type="email"
-                  name="email"
-                  placeholder="Enter your email"
-                  className="w-full px-4 py-2 rounded-full bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:border-[#007AFF]"
-                  required
-                />
-                <Button type="submit" className="w-full bg-[#007AFF] hover:bg-[#0056CC] text-white rounded-full">
-                  Subscribe
-                </Button>
-              </form>
-            </div>
+        </div>
+      </section>
 
             <div className="glass-card p-8 rounded-lg">
               <div className="w-12 h-12 bg-[#5865F2] rounded-full flex items-center justify-center mx-auto mb-4">
@@ -277,7 +256,29 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section id="community" className="py-20 px-4">
+      <section className="py-20 px-4 border-t border-white/10">
+        <div className="container mx-auto max-w-4xl text-center">
+          <h2 className="text-3xl font-light text-white mb-8">Our Story</h2>
+          <div className="text-left max-w-3xl mx-auto space-y-6">
+            <p className="text-white/80 text-lg leading-relaxed">
+              Obscura was born from a growing concern about the erosion of digital privacy in our interconnected world.
+              As surveillance capitalism expanded and data breaches became commonplace, we realized that individual
+              action alone wasn't enough—we needed a community.
+            </p>
+            <p className="text-white/80 text-lg leading-relaxed">
+              What inspired us was seeing how many people felt helpless against big tech's data collection practices,
+              government surveillance programs, and the increasing use of AI to analyze personal information. We believe
+              that privacy shouldn't be a luxury for the tech-savvy few, but a fundamental right accessible to everyone.
+            </p>
+            <p className="text-white/80 text-lg leading-relaxed">
+              Our vision of success is a world where privacy is the norm, not the exception. Where people understand
+              their digital rights, have access to privacy-protecting tools, and feel empowered to advocate for stronger
+              data protection policies. Together, we're building that future.
+            </p>
+          </div>
+        </div>
+      </section>
+          <section id="community" className="py-20 px-4">
         <div className="container mx-auto max-w-2xl text-center">
           <div className="flex items-center justify-center space-x-8 mb-8">
             <a
@@ -318,29 +319,6 @@ export default function HomePage() {
             </a>
           </div>
           <p className="text-white/50 text-sm">Join our community fighting for digital privacy rights.</p>
-        </div>
-      </section>
-
-      <section className="py-20 px-4 border-t border-white/10">
-        <div className="container mx-auto max-w-4xl text-center">
-          <h2 className="text-3xl font-light text-white mb-8">Our Story</h2>
-          <div className="text-left max-w-3xl mx-auto space-y-6">
-            <p className="text-white/80 text-lg leading-relaxed">
-              Obscura was born from a growing concern about the erosion of digital privacy in our interconnected world.
-              As surveillance capitalism expanded and data breaches became commonplace, we realized that individual
-              action alone wasn't enough—we needed a community.
-            </p>
-            <p className="text-white/80 text-lg leading-relaxed">
-              What inspired us was seeing how many people felt helpless against big tech's data collection practices,
-              government surveillance programs, and the increasing use of AI to analyze personal information. We believe
-              that privacy shouldn't be a luxury for the tech-savvy few, but a fundamental right accessible to everyone.
-            </p>
-            <p className="text-white/80 text-lg leading-relaxed">
-              Our vision of success is a world where privacy is the norm, not the exception. Where people understand
-              their digital rights, have access to privacy-protecting tools, and feel empowered to advocate for stronger
-              data protection policies. Together, we're building that future.
-            </p>
-          </div>
         </div>
       </section>
     </div>
